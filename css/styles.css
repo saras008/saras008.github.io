@@ -11018,21 +11018,6 @@ html {
   font-size: 1.5rem;
 }
 
-.portfolio-modal .btn-close {
-  color: #1abc9c;
-  font-size: 2rem;
-  padding: 1rem;
-}
-.portfolio-modal .portfolio-modal-title {
-  font-size: 2.25rem;
-  line-height: 2rem;
-}
-@media (min-width: 992px) {
-  .portfolio-modal .portfolio-modal-title {
-    font-size: 3rem;
-    line-height: 2.5rem;
-  }
-}
 
 .footer {
   padding-top: 5rem;
@@ -11043,4 +11028,81 @@ html {
 
 .copyright {
   background-color: #1a252f;
+}
+
+/**************************************
+   TIMELINE BASIC LAYOUT
+***************************************/
+
+.experience-section {
+  background-color: #212529; /* Example dark background */
+  color: #ffffff;
+  padding: 4rem 1rem;
+  position: relative;
+}
+
+/* The vertical line container */
+.timeline {
+  position: relative;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  max-width: 800px;
+  overflow: auto; /* ensures it contains floated items */
+}
+
+/* The vertical line itself */
+.timeline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;                /* center line */
+  transform: translateX(-50%);
+  width: 4px;
+  background-color: #fff;   /* or #f8f9fa */
+}
+
+/* Each timeline item is half the container width */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+/* Left items float left, right items float right */
+.timeline-item-left {
+  float: left;
+  text-align: left; 
+  clear: both;
+}
+.timeline-item-right {
+  float: right;
+  text-align: left; 
+  clear: both;
+}
+
+/**************************************
+   THE WHITE CIRCLE ON THE CENTER LINE
+***************************************/
+.timeline-circle {
+  position: absolute;
+  top: 20px;                /* adjust vertically to match your design */
+  left: 50%;                /* always pinned to the center line */
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #fff;   /* your circle color */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/**************************************
+   THE TIMELINE CARD
+***************************************/
+.timeline-card {
+  background-color: #343a40;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  /* etc... */
 }
