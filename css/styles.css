@@ -599,8 +599,8 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  max-width: 250px;
+  height: 200px;
 }
 
 .img-thumbnail {
@@ -8126,9 +8126,13 @@ textarea.form-control-lg {
 }
 
 .bg-primary {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background: linear-gradient(
+    135deg, 
+    #0bab64 0%, 
+    #3bb78f 100%
+  ) !important;
 }
+
 
 .bg-secondary {
   --bs-bg-opacity: 1;
