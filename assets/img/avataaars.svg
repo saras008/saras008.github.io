@@ -41,7 +41,7 @@
 		<g transform="translate(825.000000, 1100.000000)">
 			<g id="Circle" transform="translate(12.000000, 40.000000)">
 				<g id="Circle-Background">
-					<circle class="st0" cx="120" cy="120" r="120"/>
+					<circle class="st0" cx="120" cy="120" r="120" style="fill: #2C3E50;"/> <!-- Changed to darker tech blue -->
 				</g>
 				<defs>
 					<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="240" height="240">
@@ -111,7 +111,7 @@
 				<g transform="translate(0.000000, 170.000000)">
 					<g id="Clothes">
 						<path class="st0" d="M166,29.3c37,3,66,34,66,71.8v8.9H32v-8.9C32,63,61.6,31.8,99,29.2c0,0.4,0,0.7,0,1.1
-							c0,11.9,15,21.5,33.5,21.5S166,42.2,166,30.3C166,30,166,29.6,166,29.3z"/>
+							c0,11.9,15,21.5,33.5,21.5S166,42.2,166,30.3C166,30,166,29.6,166,29.3z" style="fill: #34495E;"/> <!-- Changed to darker professional color -->
 					</g>
 					<defs>
 						<filter id="Adobe_OpacityMaskFilter_4_" filterUnits="userSpaceOnUse" x="0" y="0" width="264" height="110">

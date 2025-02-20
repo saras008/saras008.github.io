@@ -140,8 +140,8 @@
     .bg-primary {
       background: linear-gradient(
         135deg, 
-        #0bab64 0%, 
-        #3bb78f 100%
+        #2c3e50 0%, 
+        #3498db 100%
       ) !important;
     }
   </style>
@@ -182,13 +182,13 @@
   <header class="masthead bg-primary text-white text-center">
     <div class="container d-flex align-items-center flex-column">
       <!-- Masthead Avatar Image-->
-      <img class="masthead-avatar mb-5" src="assets/img/avatar.svg" alt="Avatar of Iyus Dedi Putra" />
+      <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="Avatar of Iyus Dedi Putra" />
       <!-- Masthead Heading-->
       <h1 class="masthead-heading text-uppercase mb-0">Iyus Dedi Putra</h1>
       <!-- Icon Divider-->
       <div class="divider-custom divider-light">
         <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="fas fa-diamond"></i></div>
+        <div class="divider-custom-icon"><i class="fas fa-solid fa-code"></i></div>
         <div class="divider-custom-line"></div>
       </div>
       <!-- Masthead Subheading-->
@@ -200,49 +200,52 @@
   <section class="page-section portfolio" id="portfolio">
     <div class="container">
       <!-- Skills Section Heading-->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Skills</h2>
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" data-aos="fade-up">Skills</h2>
       <!-- Icon Divider-->
-      <div class="divider-custom">
+      <div class="divider-custom" data-aos="fade-up">
         <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="fas fa-diamond"></i></div>
+        <div class="divider-custom-icon"><i class="fas fa-solid fa-code"></i></div>
         <div class="divider-custom-line"></div>
+      </div>
+      <!-- Skills with ratings -->
+      <div class="row justify-content-center">
       </div>
       <!-- Skills Grid Items (static)-->
       <div class="row justify-content-center">
         <!-- Item 1-->
         <div class="col-md-6 col-lg-4 mb-5">
-          <div class="portfolio-item mx-auto">
-            <img class="img-fluid" src="assets/img/portfolio/centos.png" alt="CentOS logo" />
+          <div class="portfolio-item mx-auto text-center">
+            <img class="img-fluid" src="assets/img/portfolio/centos.png" alt="CentOS logo" style="max-width: 200px; height: auto;" />
           </div>
         </div>
         <!-- Item 2-->
         <div class="col-md-6 col-lg-4 mb-5">
-          <div class="portfolio-item mx-auto">
-            <img class="img-fluid" src="assets/img/portfolio/docker.png" alt="Docker logo" />
+          <div class="portfolio-item mx-auto text-center">
+            <img class="img-fluid" src="assets/img/portfolio/docker.png" alt="Docker logo" style="max-width: 200px; height: auto;" />
           </div>
         </div>
         <!-- Item 3-->
         <div class="col-md-6 col-lg-4 mb-5">
-          <div class="portfolio-item mx-auto">
-            <img class="img-fluid" src="assets/img/portfolio/linux.png" alt="Linux logo" />
+          <div class="portfolio-item mx-auto text-center">
+            <img class="img-fluid" src="assets/img/portfolio/linux.png" alt="Linux logo" style="max-width: 200px; height: auto;" />
           </div>
         </div>
         <!-- Item 4-->
         <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-          <div class="portfolio-item mx-auto">
-            <img class="img-fluid" src="assets/img/portfolio/prometheus.png" alt="Prometheus logo" />
+          <div class="portfolio-item mx-auto text-center">
+            <img class="img-fluid" src="assets/img/portfolio/prometheus.png" alt="Prometheus logo" style="max-width: 200px; height: auto;" />
           </div>
         </div>
         <!-- Item 5-->
         <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-          <div class="portfolio-item mx-auto">
-            <img class="img-fluid" src="assets/img/portfolio/aws.png" alt="AWS Cloud logo" />
+          <div class="portfolio-item mx-auto text-center">
+            <img class="img-fluid" src="assets/img/portfolio/aws.png" alt="AWS Cloud logo" style="max-width: 200px; height: auto;" />
           </div>
         </div>
         <!-- Item 6-->
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto">
-            <img class="img-fluid" src="assets/img/portfolio/kubernetes.png" alt="Kubernetes logo" />
+          <div class="portfolio-item mx-auto text-center">
+            <img class="img-fluid" src="assets/img/portfolio/kubernetes.png" alt="Kubernetes logo" style="max-width: 200px; height: auto;" />
           </div>
         </div>
       </div>
@@ -257,7 +260,7 @@
       <!-- Icon Divider-->
       <div class="divider-custom divider-light">
         <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="fas fa-diamond"></i></div>
+        <div class="divider-custom-icon"><i class="fas fa-solid fa-code"></i></div>
         <div class="divider-custom-line"></div>
       </div>
       <!-- About Section Content-->
@@ -283,104 +286,116 @@
     </div>
   </section>
 
-  <section class="page-section experience-section" id="experience">
+<section class="page-section experience-section" id="experience">
     <div class="container">
       <!-- Section Title / Divider -->
       <h2 class="page-section-heading text-center text-uppercase mb-0">Working Experience</h2>
       <div class="divider-custom">
         <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="fas fa-diamond"></i></div>
+        <div class="divider-custom-icon"><i class="fas fa-briefcase"></i></div>
         <div class="divider-custom-line"></div>
       </div>
     </div>
   
-    <!-- Timeline Container (with zero container padding in CSS for alignment) -->
+    <!-- Timeline Container -->
     <div class="container timeline">
       <!-- 1st Job: Left -->
       <div class="timeline-item timeline-item-left">
-        <div class="timeline-card">
+        <div class="timeline-circle">
+          <i class="fas fa-server" style="color: #2c3e50; position: relative; top: 2px; left: 4px;"></i>
+        </div>
+        <div class="timeline-card" style="border-left: 4px solid #3498db;">
+          <span class="badge bg-primary mb-2">2021 - Present</span>
           <h3 class="experience-title">System Engineer @Trans Digital Media (detik)</h3>
           <h4 class="experience-role">Responsibilities:</h4>
           <ul class="experience-list">
-            <ul>
-              <i class="fas fa-check-circle me-2"></i>
+            <li>
+              <i class="fas fa-cog me-2" style="color: #3498db;"></i>
               <strong>Portal Management:</strong> Maintained CNN, CNBC, Haibunda, cxomedia, beautynesia
               media portals, ensuring reliability and performance.
-            </ul>
-            <ul>
-              <i class="fas fa-check-circle me-2"></i>
-              <strong>ELK Stack Monitoring:</strong> Configured &amp; maintained centralized logging
+            </li>
+            <li>
+              <i class="fas fa-chart-line me-2" style="color: #3498db;"></i>
+              <strong>ELK Stack Monitoring:</strong> Configured & maintained centralized logging
               and metrics using ELK (Elasticsearch, Logstash, Kibana).
-            </ul>
-            <ul>
-              <i class="fas fa-check-circle me-2"></i>
-              <strong>Grafana &amp; Prometheus:</strong> Deployed to monitor system and application health.
-            </ul>
-            <ul>
-              <i class="fas fa-check-circle me-2"></i>
-              <strong>Wowza Streaming Engine:</strong> Set up &amp; managed live/recorded streaming solutions.
-            </ul>
-            <ul>
-              <i class="fas fa-check-circle me-2"></i>
+            </li>
+            <li>
+              <i class="fas fa-tachometer-alt me-2" style="color: #3498db;"></i>
+              <strong>Grafana & Prometheus:</strong> Deployed to monitor system and application health.
+            </li>
+            <li>
+              <i class="fas fa-video me-2" style="color: #3498db;"></i>
+              <strong>Wowza Streaming Engine:</strong> Set up & managed live/recorded streaming solutions.
+            </li>
+            <li>
+              <i class="fas fa-cloud me-2" style="color: #3498db;"></i>
               <strong>Public Cloud:</strong> Deployed and maintained instances on Alibaba, Huawei, and GCP.
-            </ul>
-            <ul>
-              <i class="fas fa-check-circle me-2"></i>
+            </li>
+            <li>
+              <i class="fas fa-cubes me-2" style="color: #3498db;"></i>
               <strong>Container Platforms:</strong> Handled Docker, Portainer, and Kubernetes-based workloads.
-            </ul>
-          </>
+            </li>
+          </ul>
         </div>
       </div>
   
       <!-- 2nd Job: Right -->
       <div class="timeline-item timeline-item-right">
-        <div class="timeline-card">
+        <div class="timeline-circle">
+          <i class="fas fa-desktop" style="color: #2c3e50; position: relative; top: 2px; left: 4px;"></i>
+        </div>
+        <div class="timeline-card" style="border-right: 4px solid #e74c3c;">
+          <span class="badge bg-danger mb-2">2019 - 2021</span>
           <h3 class="experience-title">System Administrator @Trans Digital Media (detik)</h3>
           <h4 class="experience-role">Responsibilities:</h4>
           <ul class="experience-list">
-            <ul>
-              <i class="fas fa-check-circle me-2"></i>
+            <li>
+              <i class="fas fa-globe me-2" style="color: #e74c3c;"></i>
               <strong>Portal Coverage:</strong> Oversaw CNN, CNBC, Haibunda, cxomedia, beautynesia platforms.
-            </ul>
-            <ul>
-              <i class="fas fa-check-circle me-2"></i>
+            </li>
+            <li>
+              <i class="fas fa-chart-bar me-2" style="color: #e74c3c;"></i>
               <strong>Monitoring Stack:</strong> Managed ELK and Grafana-Prometheus for real-time insights.
-            </ul>
-            <ul>
-              <i class="fas fa-check-circle me-2"></i>
-              <strong>Wowza Engine:</strong> Configured streaming solutions for live broadcasts &amp; VOD.
-            </ul>
+            </li>
+            <li>
+              <i class="fas fa-play-circle me-2" style="color: #e74c3c;"></i>
+              <strong>Wowza Engine:</strong> Configured streaming solutions for live broadcasts & VOD.
+            </li>
           </ul>
         </div>
       </div>
   
       <!-- 3rd Job: Left -->
       <div class="timeline-item timeline-item-left">
-        <div class="timeline-card">
-          <h3 class="experience-title">Network &amp; System Administrator @uangteman.com (Fintech)</h3>
+        <div class="timeline-circle">
+          <i class="fas fa-network-wired" style="color: #2c3e50; position: relative; top: 2px; left: 4px;"></i>
+        </div>
+        <div class="timeline-card" style="border-left: 4px solid #2ecc71;">
+          <span class="badge bg-success mb-2">2017 - 2019</span>
+          <h3 class="experience-title">Network & System Administrator @uangteman.com (Fintech)</h3>
           <h4 class="experience-role">Responsibilities:</h4>
           <ul class="experience-list">
-            <ul>
-              <i class="fas fa-check-circle me-2"></i>
+            <li>
+              <i class="fas fa-server me-2" style="color: #2ecc71;"></i>
               <strong>Windows Server:</strong> Managed AD, DNS, file services, and patching compliance.
-            </ul>
-            <ul>
-              <i class="fas fa-check-circle me-2"></i>
+            </li>
+            <li>
+              <i class="fas fa-network-wired me-2" style="color: #2ecc71;"></i>
               <strong>Network Infrastructure:</strong> Maintained switches, routers, and VLAN setups.
-            </ul>
-            <ul>
-              <i class="fas fa-check-circle me-2"></i>
+            </li>
+            <li>
+              <i class="fas fa-users-cog me-2" style="color: #2ecc71;"></i>
               <strong>User Support:</strong> Provided desktop support and troubleshooting for employees.
-            </ul>
-            <ul>
-              <i class="fas fa-check-circle me-2"></i>
-              <strong>WSUS Server:</strong> Handled Microsoft updates &amp; patches across the organization.
-            </ul>
+            </li>
+            <li>
+              <i class="fas fa-sync me-2" style="color: #2ecc71;"></i>
+              <strong>WSUS Server:</strong> Handled Microsoft updates & patches across the organization.
+            </li>
           </ul>
         </div>
       </div>
     </div>
-  </section>  
+  </section>
 
   <!-- Footer-->
   <footer class="footer text-center">
@@ -427,7 +442,7 @@
   <!-- Copyright-->
   <div class="copyright py-4 text-center text-white">
     <div class="container">
-      <small>Copyright &copy; saras008.github.io 2023</small>
+      <small>Copyright &copy; saras008.github.io 2025</small>
     </div>
   </div>
 
